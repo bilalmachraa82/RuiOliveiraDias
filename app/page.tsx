@@ -17,7 +17,16 @@ import {
   Mic
 } from 'lucide-react';
 
-const PhoneMockup = ({ messages }) => (
+interface Message {
+  isUser: boolean;
+  text: string;
+}
+
+interface PhoneMockupProps {
+  messages: Message[];
+}
+
+const PhoneMockup: React.FC<PhoneMockupProps> = ({ messages }) => (
   <div className="bg-gray-100 rounded-xl shadow-xl max-w-sm mx-auto overflow-hidden">
     <div className="bg-gray-800 p-4 text-white flex justify-between items-center">
       <div>Assistente de Segurança Alimentar</div>
@@ -165,10 +174,10 @@ const Presentation = () => {
             </div>
             <PhoneMockup
               messages={[
-                { text: "'Iniciar relatório de visita'", isUser: true },
-                { text: "A gerar relatório padrão. Qual o estabelecimento?", isUser: false },
-                { text: "'Restaurante Central'", isUser: true },
-                { text: "A iniciar relatório. Quer começar pela lista HACCP?", isUser: false }
+                { isUser: true, text: 'Iniciar relatório de visita' },
+                { isUser: false, text: 'A gerar relatório padrão. Qual o estabelecimento?' },
+                { isUser: true, text: 'Restaurante Central' },
+                { isUser: false, text: 'A iniciar relatório. Quer começar pela lista HACCP?' }
               ]}
             />
           </div>
@@ -183,14 +192,14 @@ const Presentation = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <PhoneMockup
               messages={[
-                { text: "Preciso verificar requisitos de temperatura", isUser: true },
-                { text: "De acordo com o Codex Alimentarius e ASAE...", isUser: false }
+                { isUser: true, text: 'Preciso verificar requisitos de temperatura' },
+                { isUser: false, text: 'De acordo com o Codex Alimentarius e ASAE...' }
               ]}
             />
             <PhoneMockup
               messages={[
-                { text: "'Registrar não conformidade na câmara fria'", isUser: true },
-                { text: "Registrado. Sugerindo ações corretivas...", isUser: false }
+                { isUser: true, text: 'Registrar não conformidade na câmara fria' },
+                { isUser: false, text: 'Registrado. Sugerindo ações corretivas...' }
               ]}
             />
           </div>
