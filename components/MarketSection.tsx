@@ -64,28 +64,64 @@ const MarketSection = () => {
           </div>
         </div>
 
-        <div className="bg-yellow-50 p-6 rounded-lg mt-6">
-          <h3 className="text-xl font-bold text-yellow-800 mb-4">Desafios do Consultor</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="flex items-start space-x-2">
-              <Clock className="w-5 h-5 text-yellow-600" />
-              <div>
-                <p className="font-bold">Tempo</p>
-                <p className="text-sm">15-20h semanais em documentação</p>
+        <div className="bg-gradient-to-br from-yellow-50 via-amber-50 to-orange-50 p-8 rounded-2xl shadow-lg mt-6 border border-yellow-100/50">
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-600 to-orange-600 text-transparent bg-clip-text mb-2 text-center">
+            Desafios do Consultor
+          </h3>
+          <p className="text-gray-600 mb-6 text-center">Obstáculos diários que impactam a sua produtividade</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="group bg-white/70 p-6 rounded-xl hover:shadow-lg transition-all border border-yellow-100/50 hover:scale-[1.02]">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-gradient-to-br from-amber-100 to-yellow-100 p-3 rounded-xl group-hover:scale-110 transition-transform mb-4">
+                  <span className="text-3xl">⏰</span>
+                </div>
+                <div>
+                  <p className="font-bold text-lg text-amber-800 mb-3">Tempo</p>
+                  <div className="space-y-2">
+                    <p className="text-gray-600">15-20h semanais em:</p>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>📝 Documentação manual</li>
+                      <li>📊 Relatórios repetitivos</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="flex items-start space-x-2">
-              <Shield className="w-5 h-5 text-yellow-600" />
-              <div>
-                <p className="font-bold">Legislação</p>
-                <p className="text-sm">Atualizações constantes</p>
+
+            <div className="group bg-white/70 p-6 rounded-xl hover:shadow-lg transition-all border border-yellow-100/50 hover:scale-[1.02]">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-gradient-to-br from-amber-100 to-yellow-100 p-3 rounded-xl group-hover:scale-110 transition-transform mb-4">
+                  <span className="text-3xl">📜</span>
+                </div>
+                <div>
+                  <p className="font-bold text-lg text-amber-800 mb-3">Legislação</p>
+                  <div className="space-y-2">
+                    <p className="text-gray-600">Complexidade em:</p>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>🔄 Atualizações constantes</li>
+                      <li>📖 Interpretação das normas</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="flex items-start space-x-2">
-              <FileCheck className="w-5 h-5 text-yellow-600" />
-              <div>
-                <p className="font-bold">Conformidade</p>
-                <p className="text-sm">Maior complexidade</p>
+
+            <div className="group bg-white/70 p-6 rounded-xl hover:shadow-lg transition-all border border-yellow-100/50 hover:scale-[1.02]">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-gradient-to-br from-amber-100 to-yellow-100 p-3 rounded-xl group-hover:scale-110 transition-transform mb-4">
+                  <span className="text-3xl">✅</span>
+                </div>
+                <div>
+                  <p className="font-bold text-lg text-amber-800 mb-3">Conformidade</p>
+                  <div className="space-y-2">
+                    <p className="text-gray-600">Exigências em:</p>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>📈 Maior complexidade</li>
+                      <li>📋 Documentação detalhada</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

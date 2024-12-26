@@ -6,13 +6,13 @@ import {
   BadgeCheck, ClipboardCheck, Sparkles,
   MessageCircle, Phone, Mic,
   Clock, FileCheck, Shield,
-  Star, Award, TrendingUp
+  Star, Award, TrendingUp, AlertTriangle
 } from 'lucide-react';
 
 const PhoneMockup = ({ messages }) => (
   <div className="bg-gray-100 rounded-xl shadow-xl max-w-sm mx-auto overflow-hidden">
     <div className="bg-gray-800 p-4 text-white flex justify-between items-center">
-      <div>FoodSafety Assistant</div>
+      <div>Assistente de Segurança Alimentar</div>
       <Mic className="w-5 h-5" />
     </div>
     <div className="p-4 space-y-4">
@@ -40,10 +40,10 @@ const Presentation = () => {
             </h1>
             <p className="text-2xl">Consultor em Segurança Alimentar</p>
             <h2 className="text-xl font-semibold max-w-2xl mx-auto">
-              🚀 Revolucione sua Consultoria em Segurança Alimentar com IA
+              🚀 Revolucione a sua Consultoria em Segurança Alimentar com IA
             </h2>
             <p className="text-lg max-w-2xl mx-auto opacity-90">
-              ⚡ Transforme horas de trabalho em minutos. Nossa solução combina sua expertise com IA avançada para relatórios mais precisos e eficientes.
+              ⚡ Transforme horas de trabalho em minutos. A nossa solução combina a sua experiência com IA avançada para relatórios mais precisos e eficientes.
             </p>
             <div className="grid grid-cols-3 gap-6 mt-8">
               <div className="bg-white/15 p-6 rounded-xl backdrop-blur-sm hover:bg-white/25 transition-all group">
@@ -121,7 +121,7 @@ const Presentation = () => {
       id: 'solution',
       content: (
         <div className="space-y-8">
-          <h2 className="text-3xl font-bold">Seu Assistente Pessoal com IA</h2>
+          <h2 className="text-3xl font-bold">O Seu Assistente Pessoal com IA</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h3 className="text-xl font-bold">Funcionalidades Principais</h3>
@@ -130,7 +130,7 @@ const Presentation = () => {
                   <div className="flex items-start space-x-3">
                     <FileCheck className="w-6 h-6 text-blue-600" />
                     <div>
-                      <p className="font-bold">Automação de Relatórios</p>
+                      <p className="font-bold">Automatização de Relatórios</p>
                       <p className="text-sm text-gray-600">De 2 horas para 15 minutos</p>
                     </div>
                   </div>
@@ -157,10 +157,10 @@ const Presentation = () => {
             </div>
             <PhoneMockup
               messages={[
-                { text: " 'Iniciar relatório de visita'", isUser: true },
-                { text: "Gerando relatório padrão. Qual o estabelecimento?", isUser: false },
-                { text: " 'Restaurante Central'", isUser: true },
-                { text: "Iniciando relatório. Quer começar pela checklist HACCP?", isUser: false }
+                { text: "'Iniciar relatório de visita'", isUser: true },
+                { text: "A gerar relatório padrão. Qual o estabelecimento?", isUser: false },
+                { text: "'Restaurante Central'", isUser: true },
+                { text: "A iniciar relatório. Quer começar pela lista HACCP?", isUser: false }
               ]}
             />
           </div>
@@ -181,7 +181,7 @@ const Presentation = () => {
             />
             <PhoneMockup
               messages={[
-                { text: " 'Registrar não conformidade na câmara fria'", isUser: true },
+                { text: "'Registrar não conformidade na câmara fria'", isUser: true },
                 { text: "Registrado. Sugerindo ações corretivas...", isUser: false }
               ]}
             />
@@ -194,99 +194,71 @@ const Presentation = () => {
       content: <OfferSection />
     },
     {
-      id: 'roi',
+      id: 'innovation',
       content: (
         <div className="space-y-8">
-          <h2 className="text-3xl font-bold text-center">Impacto no Seu Negócio</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all">
-              <div className="space-y-4">
-                <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 p-3 rounded-xl w-fit">
-                  <TrendingUp className="w-8 h-8 text-emerald-600" />
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-emerald-600">45h</p>
-                  <p className="text-gray-600">Economia Mensal</p>
-                  <p className="text-xl text-emerald-600 font-semibold">€1,350</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all">
-              <div className="space-y-4">
-                <div className="bg-gradient-to-br from-blue-500/10 to-indigo-500/10 p-3 rounded-xl w-fit">
-                  <Star className="w-8 h-8 text-blue-600" />
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-blue-600">+13</p>
-                  <p className="text-gray-600">Clientes/Mês</p>
-                  <p className="text-xl text-blue-600 font-semibold">€1,950</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all">
-              <div className="space-y-4">
-                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 p-3 rounded-xl w-fit">
-                  <Award className="w-8 h-8 text-purple-600" />
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-purple-600">490%</p>
-                  <p className="text-gray-600">ROI 1º Mês</p>
-                  <p className="text-xl text-purple-600 font-semibold">€3,300</p>
-                </div>
-              </div>
-            </div>
+          <div className="text-center space-y-4">
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
+              Inovação e Diferenciação
+            </h2>
+            <p className="text-xl text-gray-600">
+              Transforme a sua consultoria com tecnologia de ponta
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl shadow-lg">
-              <h3 className="text-xl font-bold mb-4 text-blue-800">Inovação e Diferenciação</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center space-x-3">
-                  <div className="bg-blue-100 p-2 rounded-lg">
-                    <BadgeCheck className="w-5 h-5 text-blue-600" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="group bg-white/70 p-6 rounded-xl hover:shadow-lg transition-all border border-blue-100/50 hover:scale-[1.02]">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-gradient-to-br from-blue-100 to-purple-100 p-3 rounded-xl group-hover:scale-110 transition-transform mb-4">
+                  <span className="text-3xl">🚀</span>
+                </div>
+                <div>
+                  <p className="font-bold text-lg text-blue-800 mb-3">Automação Inteligente</p>
+                  <div className="space-y-2">
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>🤖 Assistente IA dedicado</li>
+                      <li>⚡ Processos otimizados</li>
+                      <li>📱 Acesso em qualquer lugar</li>
+                    </ul>
                   </div>
-                  <span className="text-gray-700">Primeiro consultor com assistente AI personalizado</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="bg-blue-100 p-2 rounded-lg">
-                    <Sparkles className="w-5 h-5 text-blue-600" />
-                  </div>
-                  <span className="text-gray-700">Destaque-se da concorrência com tecnologia de ponta</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="bg-blue-100 p-2 rounded-lg">
-                    <ClipboardCheck className="w-5 h-5 text-blue-600" />
-                  </div>
-                  <span className="text-gray-700">Processos mais eficientes e profissionais</span>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-2xl shadow-lg">
-              <h3 className="text-xl font-bold mb-4 text-purple-800">Alavancagem do Negócio</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center space-x-3">
-                  <div className="bg-purple-100 p-2 rounded-lg">
-                    <Clock className="w-5 h-5 text-purple-600" />
+            <div className="group bg-white/70 p-6 rounded-xl hover:shadow-lg transition-all border border-purple-100/50 hover:scale-[1.02]">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-gradient-to-br from-purple-100 to-pink-100 p-3 rounded-xl group-hover:scale-110 transition-transform mb-4">
+                  <span className="text-3xl">💡</span>
+                </div>
+                <div>
+                  <p className="font-bold text-lg text-purple-800 mb-3">Diferenciação</p>
+                  <div className="space-y-2">
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>🎯 Serviço personalizado</li>
+                      <li>🔍 Análise preditiva</li>
+                      <li>📊 Relatórios detalhados</li>
+                    </ul>
                   </div>
-                  <span className="text-gray-700">Reduza o tempo gasto em tarefas repetitivas</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="bg-purple-100 p-2 rounded-lg">
-                    <MessageCircle className="w-5 h-5 text-purple-600" />
+                </div>
+              </div>
+            </div>
+
+            <div className="group bg-white/70 p-6 rounded-xl hover:shadow-lg transition-all border border-pink-100/50 hover:scale-[1.02]">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-gradient-to-br from-pink-100 to-rose-100 p-3 rounded-xl group-hover:scale-110 transition-transform mb-4">
+                  <span className="text-3xl">📈</span>
+                </div>
+                <div>
+                  <p className="font-bold text-lg text-pink-800 mb-3">Potencialização</p>
+                  <div className="space-y-2">
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>⚡ Maior produtividade</li>
+                      <li>🎯 Foco estratégico</li>
+                      <li>🌟 Qualidade superior</li>
+                    </ul>
                   </div>
-                  <span className="text-gray-700">Atenda mais clientes com a mesma qualidade</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="bg-purple-100 p-2 rounded-lg">
-                    <Shield className="w-5 h-5 text-purple-600" />
-                  </div>
-                  <span className="text-gray-700">Base de conhecimento sempre atualizada</span>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -295,28 +267,61 @@ const Presentation = () => {
     {
       id: 'contact',
       content: (
-        <div className="text-center space-y-6">
+        <div className="text-center space-y-8">
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
-              Pronto para Revolucionar sua Consultoria?
+            <h2 className="text-4xl font-bold">
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
+                Rui, vamos revolucionar
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-purple-600 to-blue-600 text-transparent bg-clip-text">
+                a sua consultoria em conjunto?
+              </span>
             </h2>
             <p className="text-xl text-gray-600">
-              Vamos criar seu assistente AI personalizado e otimizar seus processos
+              O seu assistente IA personalizado está pronto para começar
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg">
-            <div className="space-y-4">
-              <div className="flex items-center justify-center space-x-2 text-lg">
-                <Phone className="w-6 h-6 text-blue-600" />
-                <a href="tel:+351918911308" className="text-blue-600 hover:text-blue-800 transition-colors">
-                  +351 918 911 308
+          <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+              <div className="group">
+                <a href="tel:+351918911308" className="block">
+                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all group-hover:bg-gradient-to-br from-blue-500 to-purple-500 group-hover:scale-105">
+                    <div className="flex flex-col items-center space-y-3">
+                      <div className="bg-gradient-to-br from-blue-100 to-purple-100 p-4 rounded-full group-hover:bg-white">
+                        <Phone className="w-8 h-8 text-blue-600" />
+                      </div>
+                      <div className="text-center">
+                        <p className="text-lg font-semibold text-gray-700 group-hover:text-white transition-colors">
+                          Ligar Agora
+                        </p>
+                        <p className="text-sm text-gray-500 group-hover:text-blue-100 transition-colors">
+                          +351 918 911 308
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </a>
               </div>
-              <div className="flex items-center justify-center space-x-2 text-lg">
-                <MessageCircle className="w-6 h-6 text-blue-600" />
-                <a href="mailto:bilal.machraa@aiparati.pt" className="text-blue-600 hover:text-blue-800 transition-colors">
-                  bilal.machraa@aiparati.pt
+              
+              <div className="group">
+                <a href="mailto:bilal.machraa@aiparati.pt" className="block">
+                  <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all group-hover:bg-gradient-to-br from-blue-500 to-purple-500 group-hover:scale-105">
+                    <div className="flex flex-col items-center space-y-3">
+                      <div className="bg-gradient-to-br from-blue-100 to-purple-100 p-4 rounded-full group-hover:bg-white">
+                        <MessageCircle className="w-8 h-8 text-blue-600" />
+                      </div>
+                      <div className="text-center">
+                        <p className="text-lg font-semibold text-gray-700 group-hover:text-white transition-colors">
+                          Enviar Email
+                        </p>
+                        <p className="text-sm text-gray-500 group-hover:text-blue-100 transition-colors">
+                          bilal.machraa@aiparati.pt
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </a>
               </div>
             </div>
@@ -324,7 +329,7 @@ const Presentation = () => {
 
           <div className="text-sm text-gray-500">
             <p>Desenvolvido pela AiParaTi</p>
-            <p>Especialistas em Soluções AI para Consultoria</p>
+            <p>Especialistas em Soluções IA para Consultoria</p>
           </div>
         </div>
       )
