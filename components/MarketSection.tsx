@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertTriangle, TrendingUp, Clock, Shield, FileCheck, BadgeCheck } from 'lucide-react';
+import { AlertTriangle, TrendingUp, Clock, Shield, FileCheck } from 'lucide-react';
 
 const MarketSection = () => {
   return (
@@ -50,15 +50,15 @@ const MarketSection = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-2">
                 <TrendingUp className="w-5 h-5 text-blue-600" />
-                <p>Aumento de 23% nas fiscalizações</p>
+                <p>Aumento na demanda por consultoria</p>
               </div>
               <div className="flex items-start space-x-2">
                 <TrendingUp className="w-5 h-5 text-blue-600" />
-                <p>+15% novos estabelecimentos</p>
+                <p>Maior foco em segurança alimentar</p>
               </div>
               <div className="flex items-start space-x-2">
                 <TrendingUp className="w-5 h-5 text-blue-600" />
-                <p>Maior exigência documental</p>
+                <p>Adoção de tecnologias digitais</p>
               </div>
             </div>
           </div>
@@ -106,11 +106,11 @@ const MarketSection = () => {
                     <p className="text-gray-600">Complexidade em:</p>
                     <ul className="space-y-2 text-sm text-gray-600">
                       <li className="flex items-center space-x-2">
-                        <BadgeCheck className="w-4 h-4 text-amber-600" />
+                        <FileCheck className="w-4 h-4 text-amber-600" />
                         <span>Atualizações constantes</span>
                       </li>
                       <li className="flex items-center space-x-2">
-                        <BadgeCheck className="w-4 h-4 text-amber-600" />
+                        <FileCheck className="w-4 h-4 text-amber-600" />
                         <span>Interpretação das normas</span>
                       </li>
                     </ul>
@@ -130,11 +130,11 @@ const MarketSection = () => {
                     <p className="text-gray-600">Exigências em:</p>
                     <ul className="space-y-2 text-sm text-gray-600">
                       <li className="flex items-center space-x-2">
-                        <BadgeCheck className="w-4 h-4 text-amber-600" />
+                        <FileCheck className="w-4 h-4 text-amber-600" />
                         <span>Maior complexidade</span>
                       </li>
                       <li className="flex items-center space-x-2">
-                        <BadgeCheck className="w-4 h-4 text-amber-600" />
+                        <FileCheck className="w-4 h-4 text-amber-600" />
                         <span>Documentação detalhada</span>
                       </li>
                     </ul>

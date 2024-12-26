@@ -1,4 +1,5 @@
 import React from 'react';
+import { Mic } from 'lucide-react';
 
 interface Message {
   isUser: boolean;
@@ -13,6 +14,7 @@ const PhoneMockup: React.FC<PhoneMockupProps> = ({ messages }) => (
   <div className="bg-gray-100 rounded-xl shadow-xl max-w-sm mx-auto overflow-hidden">
     <div className="bg-gray-800 p-4 text-white flex justify-between items-center">
       <div>Assistente de Segurança Alimentar</div>
+      <Mic className="w-5 h-5 text-white" />
     </div>
     <div className="p-4 space-y-4">
       {messages.map((message, index) => (

@@ -40,9 +40,9 @@ const SolutionSection = () => (
       </div>
       <PhoneMockup
         messages={[
-          { text: " 'Iniciar relatório de visita'", isUser: true },
+          { text: "Iniciar relatório de visita", isUser: true },
           { text: "Gerando relatório padrão. Qual o estabelecimento?", isUser: false },
-          { text: " 'Restaurante Central'", isUser: true },
+          { text: "Restaurante Central", isUser: true },
           { text: "Iniciando relatório. Quer começar pela checklist HACCP?", isUser: false }
         ]}
       />

@@ -7,15 +7,16 @@ import {
   BadgeCheck, 
   Sparkles, 
   ClipboardCheck, 
-  MessageCircle, 
-  Star,
-  Phone,
   FileCheck, 
   Shield, 
   Clock, 
   BookOpen, 
   CheckCircle,
-  Mic
+  Mic,
+  Award,
+  MessageCircle,
+  Star,
+  Phone
 } from 'lucide-react';
 import PhoneMockup from '../components/PhoneMockup';
 
@@ -40,11 +41,13 @@ const Presentation = () => {
               Rui Oliveira Dias
             </h1>
             <p className="text-2xl">Consultor em Segurança Alimentar</p>
-            <h2 className="text-xl font-semibold max-w-2xl mx-auto">
-              🚀 Revolucione a sua Consultoria em Segurança Alimentar com IA
+            <h2 className="text-xl font-semibold max-w-2xl mx-auto flex items-center justify-center gap-2">
+              <Sparkles className="w-6 h-6" /> Revolucione a sua Consultoria em Segurança Alimentar com IA
             </h2>
             <p className="text-lg max-w-2xl mx-auto opacity-90">
-              ⚡ Transforme horas de trabalho em minutos. A nossa solução combina a sua experiência com IA avançada para relatórios mais precisos e eficientes.
+              <span className="flex items-center justify-center gap-2">
+                <Sparkles className="w-5 h-5" /> Transforme horas de trabalho em minutos. A nossa solução combina a sua experiência com IA avançada para relatórios mais precisos e eficientes.
+              </span>
             </p>
             <div className="grid grid-cols-3 gap-6 mt-8">
               <div className="bg-white/15 p-6 rounded-xl backdrop-blur-sm hover:bg-white/25 transition-all group">
