@@ -10,12 +10,14 @@ import {
   MessageCircle, 
   Star,
   Phone,
-  Clock,
-  FileCheck,
-  Shield,
-  Award,
+  FileCheck, 
+  Shield, 
+  Clock, 
+  BookOpen, 
+  CheckCircle,
   Mic
 } from 'lucide-react';
+import PhoneMockup from '../components/PhoneMockup';
 
 interface Message {
   isUser: boolean;
@@ -25,24 +27,6 @@ interface Message {
 interface PhoneMockupProps {
   messages: Message[];
 }
-
-const PhoneMockup: React.FC<PhoneMockupProps> = ({ messages }) => (
-  <div className="bg-gray-100 rounded-xl shadow-xl max-w-sm mx-auto overflow-hidden">
-    <div className="bg-gray-800 p-4 text-white flex justify-between items-center">
-      <div>Assistente de Segurança Alimentar</div>
-      <Mic className="w-5 h-5 text-white" />
-    </div>
-    <div className="p-4 space-y-4">
-      {messages.map((msg, idx) => (
-        <div key={idx} className={`flex ${msg.isUser ? 'justify-end' : 'justify-start'}`}>
-          <div className={`rounded-lg p-3 max-w-[80%] ${msg.isUser ? 'bg-blue-500 text-white' : 'bg-white'}`}>
-            {msg.text}
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-);
 
 const Presentation = () => {
   const sections = [
