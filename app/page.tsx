@@ -2,18 +2,26 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import MarketSection from '@/components/MarketSection';
 import OfferSection from '@/components/OfferSection';
+import Image from 'next/image';
 import { 
-  BadgeCheck, ClipboardCheck, Sparkles,
-  MessageCircle, Phone, Mic,
-  Clock, FileCheck, Shield,
-  Star, Award, TrendingUp, AlertTriangle
+  BadgeCheck, 
+  Sparkles, 
+  ClipboardCheck, 
+  MessageCircle, 
+  Star,
+  Phone,
+  Clock,
+  FileCheck,
+  Shield,
+  Award,
+  Mic
 } from 'lucide-react';
 
 const PhoneMockup = ({ messages }) => (
   <div className="bg-gray-100 rounded-xl shadow-xl max-w-sm mx-auto overflow-hidden">
     <div className="bg-gray-800 p-4 text-white flex justify-between items-center">
       <div>Assistente de Segurança Alimentar</div>
-      <Mic className="w-5 h-5" />
+      <Mic className="w-5 h-5 text-white" />
     </div>
     <div className="p-4 space-y-4">
       {messages.map((msg, idx) => (
@@ -290,7 +298,7 @@ const Presentation = () => {
                   <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all group-hover:bg-gradient-to-br from-blue-500 to-purple-500 group-hover:scale-105">
                     <div className="flex flex-col items-center space-y-3">
                       <div className="bg-gradient-to-br from-blue-100 to-purple-100 p-4 rounded-full group-hover:bg-white">
-                        <Phone className="w-8 h-8 text-blue-600" />
+                        <Phone className="w-8 h-8 mx-auto text-blue-600" />
                       </div>
                       <div className="text-center">
                         <p className="text-lg font-semibold text-gray-700 group-hover:text-white transition-colors">

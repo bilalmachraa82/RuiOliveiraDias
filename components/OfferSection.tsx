@@ -1,11 +1,6 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
-import { 
-  Clock, Star, Award, Shield, 
-  MessageCircle, Phone, FileCheck, Mic,
-  AlertTriangle, TrendingUp, CheckCircle,
-  Calendar, Timer, Globe2
-} from 'lucide-react';
+import { Clock, Star, Award, Shield, MessageCircle, Phone, FileCheck, Mic, AlertTriangle, TrendingUp, CheckCircle, Calendar, Globe2 } from 'lucide-react';
 
 interface TimelineItemProps {
   day: string;
@@ -73,7 +68,7 @@ const OfferSection = () => {
                 <p className="text-sm text-blue-200">Economia de 111€</p>
               </div>
               <div className="bg-gradient-to-br from-amber-500/20 to-yellow-500/20 px-6 py-4 rounded-xl">
-                <Timer className="w-8 h-8 mb-2 text-amber-300" />
+                <Calendar className="w-8 h-8 mb-2 text-amber-300" />
                 <p className="text-sm text-amber-200">Válido até</p>
                 <p className="font-bold text-amber-300">31/12/2024</p>
               </div>

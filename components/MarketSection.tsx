@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertTriangle, TrendingUp, Clock, Shield, FileCheck } from 'lucide-react';
+import { AlertTriangle, TrendingUp, Clock, Shield, FileCheck, BadgeCheck } from 'lucide-react';
 
 const MarketSection = () => {
   return (
@@ -74,15 +74,21 @@ const MarketSection = () => {
             <div className="group bg-white/70 p-6 rounded-xl hover:shadow-lg transition-all border border-yellow-100/50 hover:scale-[1.02]">
               <div className="flex flex-col items-center text-center">
                 <div className="bg-gradient-to-br from-amber-100 to-yellow-100 p-3 rounded-xl group-hover:scale-110 transition-transform mb-4">
-                  <span className="text-3xl">⏰</span>
+                  <Clock className="w-8 h-8 text-amber-600" />
                 </div>
                 <div>
                   <p className="font-bold text-lg text-amber-800 mb-3">Tempo</p>
                   <div className="space-y-2">
                     <p className="text-gray-600">15-20h semanais em:</p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>📝 Documentação manual</li>
-                      <li>📊 Relatórios repetitivos</li>
+                      <li className="flex items-center space-x-2">
+                        <FileCheck className="w-4 h-4 text-amber-600" />
+                        <span>Documentação manual</span>
+                      </li>
+                      <li className="flex items-center space-x-2">
+                        <FileCheck className="w-4 h-4 text-amber-600" />
+                        <span>Relatórios repetitivos</span>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -92,15 +98,21 @@ const MarketSection = () => {
             <div className="group bg-white/70 p-6 rounded-xl hover:shadow-lg transition-all border border-yellow-100/50 hover:scale-[1.02]">
               <div className="flex flex-col items-center text-center">
                 <div className="bg-gradient-to-br from-amber-100 to-yellow-100 p-3 rounded-xl group-hover:scale-110 transition-transform mb-4">
-                  <span className="text-3xl">📜</span>
+                  <Shield className="w-8 h-8 text-amber-600" />
                 </div>
                 <div>
                   <p className="font-bold text-lg text-amber-800 mb-3">Legislação</p>
                   <div className="space-y-2">
                     <p className="text-gray-600">Complexidade em:</p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>🔄 Atualizações constantes</li>
-                      <li>📖 Interpretação das normas</li>
+                      <li className="flex items-center space-x-2">
+                        <BadgeCheck className="w-4 h-4 text-amber-600" />
+                        <span>Atualizações constantes</span>
+                      </li>
+                      <li className="flex items-center space-x-2">
+                        <BadgeCheck className="w-4 h-4 text-amber-600" />
+                        <span>Interpretação das normas</span>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -110,15 +122,21 @@ const MarketSection = () => {
             <div className="group bg-white/70 p-6 rounded-xl hover:shadow-lg transition-all border border-yellow-100/50 hover:scale-[1.02]">
               <div className="flex flex-col items-center text-center">
                 <div className="bg-gradient-to-br from-amber-100 to-yellow-100 p-3 rounded-xl group-hover:scale-110 transition-transform mb-4">
-                  <span className="text-3xl">✅</span>
+                  <FileCheck className="w-8 h-8 text-amber-600" />
                 </div>
                 <div>
                   <p className="font-bold text-lg text-amber-800 mb-3">Conformidade</p>
                   <div className="space-y-2">
                     <p className="text-gray-600">Exigências em:</p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>📈 Maior complexidade</li>
-                      <li>📋 Documentação detalhada</li>
+                      <li className="flex items-center space-x-2">
+                        <BadgeCheck className="w-4 h-4 text-amber-600" />
+                        <span>Maior complexidade</span>
+                      </li>
+                      <li className="flex items-center space-x-2">
+                        <BadgeCheck className="w-4 h-4 text-amber-600" />
+                        <span>Documentação detalhada</span>
+                      </li>
                     </ul>
                   </div>
                 </div>
