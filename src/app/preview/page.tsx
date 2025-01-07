@@ -1,4 +1,8 @@
-export default function Home() {
+'use client';
+
+import React from 'react';
+
+export default function PreviewPage() {
   return (
     <div style={{
       minHeight: '100vh',
